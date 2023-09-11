@@ -22,12 +22,81 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fruit-primary': '#F85559',
+                        'fruit-dark': '#121212',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- custom styles -->
+    <style>
+        * {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+
+
 </head>
 
 
 <body>
     <header>
-        
+        <!-- navbar -->
+        <nav class="md:container mx-auto ">
+            <div class="navbar bg-base-100 md:bg-fruit-primary rounded-full px-11 py-4">
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:navbar-end lg:navbar-center flex-row-reverse md:flex-row justify-between">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost  lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 h-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-fruit-dark">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <img src="./images/logo.png" alt="">
+                        <a
+                            class="btn btn-ghost normal-case text-4xl hover:bg-transparent text-fruit-dark md:text-white">Fruit
+                            Burst</a>
+                    </div>
+                </div>
+
+                <div class="navbar-end hidden md:inline-flex  justify-end pe-6">
+                    <input type="text" placeholder="Search Here" class="input rounded-full  md:w-96" />
+                    <i class="fa-solid fa-magnifying-glass -ms-10"></i>
+                </div>
+            </div>
+
+
+
+        </nav>
+
     </header>
     <main>
 
