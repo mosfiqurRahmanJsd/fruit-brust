@@ -51,7 +51,7 @@
 <body>
     <header>
         <!-- navbar -->
-        <nav class="md:container mx-auto ">
+        <nav class="md:container md:mx-auto">
             <div class="navbar bg-base-100 md:bg-fruit-primary rounded-full px-11 py-4 justify-between">
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-xl text-white">
@@ -102,10 +102,10 @@
     </header>
     <main>
 
-        <!-- slider -->
-        <section class="md:container mx-auto mt-12">
-            <div class="carousel rounded-xl w-full h-[600px]">
-                <div id="slide1" class="carousel-item relative w-full">
+        <!-- slider section -->
+        <section class="md:container md:mx-auto mt-12">
+            <div class="carousel rounded-xl w-full h-[600px] relative">
+                <div id="slide1" class="carousel-item relative w-full ">
                     <div class="hero w-full" style="background-image: url('./images/banner1.png');">
                         <div class="hero-overlay bg-opacity-40"></div>
                         <div class="hero-content text-center text-neutral-content">
@@ -122,7 +122,7 @@
                         <a href="#slide2" class="btn btn-circle bg-fruit-dark text-white border-0">❯</a>
                     </div>
                 </div>
-                <div id="slide2" class="carousel-item relative w-full">
+                <div id="slide2" class="carousel-item relative w-full ">
                     <div class="hero w-full" style="background-image: url('./images/banner2.png');">
                         <div class="hero-overlay bg-opacity-40"></div>
                         <div class="hero-content text-center text-neutral-content">
@@ -173,6 +173,217 @@
                         <a href="#slide1" class="btn btn-circle bg-fruit-dark text-white border-0">❯</a>
                     </div>
                 </div>
+            </div>
+
+            <div
+                class="md:flex bg-white w-3/4 mx-auto gap-8 hidden  justify-center -mt-20 ms-48 rounded-lg py-5 relative ">
+                <div>
+                    <img src="./images/fruit1.png" alt="">
+                    <p class="mt-4 text-center text-xl">Strawberry</p>
+                </div>
+                <div>
+                    <img src="./images/fruit2.png" alt="">
+                    <p class="mt-4 text-center text-xl">Orange</p>
+                </div>
+                <div>
+                    <img src="./images/fruit3.png" alt="">
+                    <p class="mt-4 text-center text-xl">Mango</p>
+                </div>
+                <div>
+                    <img src="./images/fruit4.png" alt="">
+                    <p class="mt-4 text-center text-xl">Strawberry</p>
+                </div>
+                <div>
+                    <img src="./images/fruit5.png" alt="">
+                    <p class="mt-4 text-center text-xl">Mango</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- deal of the day -->
+        <section class="md:container md:mx-auto mt-10">
+            <div class="flex flex-col md:flex-row justify-between md:text-start text-center py-5">
+                <div>
+                    <h2 class="text-5xl font-extrabold pb-4">Deal of the day</h2>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                        Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex justify-center py-5">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span> &#10998;
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span> &#10998;
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span> &#10998;
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:43;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fruit box -->
+            <div class="grid mt-14 pb-5 gap-6 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+                <div class="card bg-base-100 border-2 border-color:#1212121a;">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl border-b-2 pb-6">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="text-base">Apples</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6" class="cursor-pointer text-fruit-primary text-lg">Details</label>
+
+                        <!-- Put this part before body tag -->
+                        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">This modal works with a hidden checkbox!</p>
+                                <div class="modal-action">
+                                    <label for="my_modal_6" class="btn">Close!</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 border-2 border-color:#1212121a;">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl border-b-2 pb-6">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="text-base">Orange</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6" class="cursor-pointer text-fruit-primary text-lg">Details</label>
+
+                        <!-- Put this part before body tag -->
+                        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">This modal works with a hidden checkbox!</p>
+                                <div class="modal-action">
+                                    <label for="my_modal_6" class="btn">Close!</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="card bg-base-100 border-2 border-color:#1212121a;">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl border-b-2 pb-6">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="text-base">Red Dragon</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6" class="cursor-pointer text-fruit-primary text-lg">Details</label>
+
+                        <!-- Put this part before body tag -->
+                        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">This modal works with a hidden checkbox!</p>
+                                <div class="modal-action">
+                                    <label for="my_modal_6" class="btn">Close!</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 border-2 border-color:#1212121a;">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl border-b-2 pb-6">12.90$ - 18.85$</h2>
+                        <p class="text-base">Banana</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6" class="cursor-pointer text-fruit-primary text-lg">Details</label>
+
+                        <!-- Put this part before body tag -->
+                        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">This modal works with a hidden checkbox!</p>
+                                <div class="modal-action">
+                                    <label for="my_modal_6" class="btn">Close!</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="flex justify-center py-6">
+                <button class="rounded-lg border-0 text-white px-8  py-5 text-xl bg-fruit-primary">Shop
+                    All</button>
             </div>
 
         </section>
